@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/CSS/StyleSheet.css" />
+    <title>@ViewData["Title"]</title>
+
+</head>
+<body>
+    <header>
+        <h2>I'm Sailing!</h2>
+    </header>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="About">About</a>
+        <a asp-controller="Home" asp-action="Content">Content</a>
+
+
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        &copy;@DateTime.Today.Year
+    </footer>
+</body>
+</html>
